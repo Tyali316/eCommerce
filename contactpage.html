@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <header><title> Oro.</title></header> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="ecommercelogo.jpg">
+    <link rel="stylesheet" href="contactpage.css">
+</head>
+<body>
+        <!--Add Naviagtion Bar, I used a fixed top menu bar so it won't move as the user scrolls up/down -->
+<section class = "navbar">
+    <a href="./index.html"> Home</a>
+    <a href="./products.html"> Products</a>
+    <a href="./contactpage.html"> Contact</a>
+    <input type="search" placeholder="Search..">
+</section>
+<br>
+
+<img src="images/ecommercelogo.jpg">
+
+
+<br>
+<!-- Added contact page form -->
+<div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="city">City</label>
+      <select id="city" name="city">
+        <option value="clt">Charlotte</option>
+        <option value="austin">Austin</option>
+        <option value="richmond">Richmond</option>
+      </select>
+
+      <label for="state">State</label>
+          <select id="state" name="state">
+              <option value="nc">NC</option>
+              <option value="tx">TX</option>
+              <option value="va">VA</option>
+          </select>
+      
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+  
+</body>
+<br>
+
+
+
+<br>
+<div class="footer">
+    <p>Footer</p>
+  </div>
+</html>
