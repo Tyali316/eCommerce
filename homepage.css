@@ -4,6 +4,7 @@ body, html {
 }
 /* The navigation bar */
 .navbar {
+   font-size: 17px ;
     overflow: hidden;
     background-color:black;
     position: fixed; /* Set the navbar to fixed position */
@@ -39,105 +40,197 @@ body, html {
     border: 1px solid #ccc;
 }
 
-
-
-/* Adding the style to slideshow. */
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  margin: auto;
-  max-width: 880px;
-  position: relative;
+.logo {
+  padding-left: 30%;
+  min-height: 40px;
+  max-width: 60px;
+  margin-top: 0.3%;
+  
 }
 
-img {
-    width: 100%;
-    object-fit: contain;
+#mySlides {
+  margin-bottom: -20;
+  overflow: hidden;
+}
+
+#mySlides figure {
+    position:relative;
+    animation: 30s slider infinite;
+    width: 500%;
     
+
+  }
+#mySlides figure img {
+    width: 20%;
+    float: left;
 }
 
-/* /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+@keyframes slider {
+0% 
+{
+ left: 0;
+}   
+20%  {
+ left: 0;
+}
+  25% {
+ left: -100%;
+}
+  45%  {
+ left: -100%;
+}
+  50% {
+ left: -200%;
+}
+  70%{
+  left: -200%;
+}
+  75% {
+  left: -300%;
+}
+  95% {
+  left: -300%;
+}
+  100%{
+  left: -400%;
+}
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.site-footer {
+  background-color:#000000;
+  margin-top: 100px;
+  /* padding-top: 75px 0 55px; */
+  font-size: 15px;
+  line-height: 10px;
+  color:#737373;
+}
+.site-footer hr {
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small {
+  margin:60px 0;
+}
+.site-footer h6 {
+    color:#fff;
+    font-size:15px;
+    text-transform:uppercase;
+    text-align: center;
+    text-decoration: underline;
+    margin: 15px;
+    letter-spacing:2px
+}
+.site-footer a {
+    color:#737373;
+}
+.site-footer a:hover {
+  color:#9eb3c0;
+  text-decoration:none;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.footer-links {
+text-align: center;
+padding: 0;
+margin-top: 15px;
+list-style: none;
+
 }
 
-.overlay {
-    position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1;
-    width: 100%;
-    transition: .5s ease;
-    opacity:0;
-    color:#000000;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center; 
+.footer-links li {
+display:block;
+line-height: 1.5;
+
+
 }
 
-/* When you mouse over the container, fade in the overlay title */
-.container:hover .overlay {
-    opacity: 1;
+.footer-links a {
+    color:#737373
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #717171;
-  border-radius: 80%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
+    color:#9eb3c0;
+    text-decoration:none;
 }
 
-.active, .dot:hover {
-  background-color:#000000 ;
+.footer-links.inline li {
+display:inline-block
+}
+.site-footer .social-icons {
+text-align:center;
+}
+.text-justify {
+text-align: center;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 5.0s;
-}
-
-@keyframes fade {
-  from {opacity: .8}
-  to {opacity: 1}
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
+.copyright-text {
     text-align: center;
 }
+
+@media (max-width:991px) {
+
+.site-footer [class^=col-] {
+margin-bottom: 50px
+}
+
+}
+@media (max-width:767px) {
+
+.site-footer {
+padding-bottom: 0;
+}
+
+.site-footer .copyright-text,.site-footer .social-icons {
+  text-align:center
+}
+}
+
+.social-icons {
+padding-left:0;
+margin-bottom:0;
+list-style:none
+}
+
+.social-icons img {
+display:inline-block;
+margin-bottom:4px;
+color: #818a91;
+font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+}
+
+/* Now we have to design each icon of social media */         
+.facebook {   
+background: #3b5998;   
+color: white;  
+}         
+.twitter {   
+color: white;   
+background: #00acee;   
+}   
+.linkedin {   
+background: #0e76a8;   
+color: white;   
+}         
+
+.github {   
+background: #3f729b;   
+color: white;   
+}         
+
+@media (max-width: 767px) {
+
+.social-icons li.title {
+  display:block;
+  margin-right:0;
+  font-weight:600 
+} 
+}
+
+
 

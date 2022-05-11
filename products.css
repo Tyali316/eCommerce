@@ -4,6 +4,7 @@ body, html {
 }
 /* The navigation bar */
 .navbar {
+    font-size: 17px ;
     overflow: hidden;
     background-color:black;
     position: fixed; /* Set the navbar to fixed position */
@@ -37,6 +38,13 @@ body, html {
   }
 .navbar input [ type=text ] {
     border: 1px solid #ccc;
+}
+.logo {
+    padding-left: 30%;
+    min-height: 40px;
+    max-width: 60px;
+    margin-top: 0.3%;
+    
 }
 
 .price {
@@ -82,14 +90,136 @@ body, html {
     height: 400px;
 }
   
-
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
+.site-footer {
+    background-color:#000000;
+    margin-top: 100px;
+    /* padding-top: 75px 0 55px; */
+    font-size: 15px;
+    line-height: 10px;
+    color:#737373;
 }
+.site-footer hr {
+    border-top-color:#bbb;
+    opacity:0.5
+}
+.site-footer hr.small {
+    margin:60px 0;
+}
+.site-footer h6 {
+      color:#fff;
+      font-size:15px;
+      text-transform:uppercase;
+      text-align: center;
+      text-decoration: underline;
+      margin: 15px;
+      letter-spacing:2px
+}
+.site-footer a {
+      color:#737373;
+}
+.site-footer a:hover {
+    color:#9eb3c0;
+    text-decoration:none;
+}
+
+.footer-links {
+  text-align: center;
+  padding: 0;
+  margin-top: 15px;
+  list-style: none;
+  
+}
+
+.footer-links li {
+  display:block;
+  line-height: 1.5;
+  
+  
+}
+
+.footer-links a {
+      color:#737373
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
+      color:#9eb3c0;
+      text-decoration:none;
+}
+
+.footer-links.inline li {
+  display:inline-block
+}
+.site-footer .social-icons {
+  text-align:center;
+}
+.text-justify {
+  text-align: center;
+}
+
+.copyright-text {
+      text-align: center;
+}
+
+@media (max-width:991px) {
+
+.site-footer [class^=col-] {
+  margin-bottom: 50px
+}
+
+}
+@media (max-width:767px) {
+
+.site-footer {
+  padding-bottom: 0;
+}
+
+.site-footer .copyright-text,.site-footer .social-icons {
+    text-align:center
+}
+}
+
+.social-icons {
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons img {
+  display:inline-block;
+  margin-bottom:4px;
+  color: #818a91;
+  font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+}
+
+/* Now we have to design each icon of social media */         
+.facebook {   
+  background: #3b5998;   
+  color: white;  
+  }         
+.twitter {   
+  color: white;   
+  background: #00acee;   
+}   
+.linkedin {   
+  background: #0e76a8;   
+  color: white;   
+}         
+
+.github {   
+  background: #3f729b;   
+  color: white;   
+}         
+  
+@media (max-width: 767px) {
+}
+
+
+
+
+ 
