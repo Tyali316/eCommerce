@@ -49,17 +49,19 @@ body, html {
 }
 
 #mySlides {
-  margin-bottom: -20;
+  margin-bottom: -50;
   overflow: hidden;
 }
 
 #mySlides figure {
-    position:relative;
-    animation: 30s slider infinite;
-    width: 500%;
-    
+  position: relative;
+  animation: 10s slider infinite;
+  animation-delay: 2s;
+  animation-duration: 6s;
+  animation-iteration-count: 2;
+  width: 300%
+}
 
-  }
 #mySlides figure img {
     width: 20%;
     float: left;
